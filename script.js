@@ -61,3 +61,26 @@ function generateProjectCards() {
 }
 
 generateProjectCards();
+
+function isInViewport(element) {
+  var rect = element.getBoundingClientRect();
+  return (
+    rect.top >= 0 &&
+    rect.left >= 0 &&
+    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+  );
+}
+// Scroll animation fade in
+function addFadeInAnimation() {
+  var elements = document.querySelectorAll('.fade-in');
+  elements.forEach(function(element) {
+    if (isInViewport(element)) {
+      element.classList.add('visible');
+    }
+  });
+}
+
+window.addEventListener('scroll', addFadeInAnimation);
+
+document.addEventListener('DOMContentLoaded', addFadeInAnimation);
