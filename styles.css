@@ -570,6 +570,7 @@ nav {
   }
 
   .fade-in{
+    opacity: 1;
     transition: none;
   }
 }
