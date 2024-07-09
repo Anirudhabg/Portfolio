@@ -23,18 +23,17 @@ body {
 
 ::-webkit-scrollbar-thumb {
   background: #0a579b;
-  
 }
 
 /* Scroll Animation */
-.fade-in {
+/* .fade-in {
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
 }
 
 .fade-in.visible {
   opacity: 1;
-}
+} */
 
 /* Navigation  */
 nav {
@@ -102,7 +101,6 @@ nav {
 }
 
 .job-title p {
-  
   color: #0a579b;
   font-size: 30px;
   margin-bottom: 20px;
@@ -194,21 +192,44 @@ nav {
 }
 
 .education-section h2,
-.skills-section h2,
 .internship-item h2 {
   color: #0a579b;
   font-size: 24px;
   margin-bottom: 20px;
 }
 
-.education-section ul,
-.skills-section .technical-strengths ul {
+.education-section ul {
   list-style: none;
 }
 
-.education-section li,
-.skills-section .technical-strengths li {
+.education-section li {
   margin-bottom: 10px;
+}
+
+.skills-section {
+  position: relative;
+  bottom: 4rem;
+  margin:20px, 0;
+  padding: 50px;
+}
+.skills-section h1 {
+  color: #0a579b;
+  font-size: 34px;
+  margin-bottom: 20px;
+}
+.technical-strengths {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+.skill {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.skill i {
+  font-size: 66px;
+  color: #007bff;
 }
 
 /* Achievement Section */
@@ -429,7 +450,6 @@ nav {
   font-size: 14px;
 }
 
-
 /* Media Query */
 @media screen and (max-width: 768px) {
   .nav-links {
@@ -569,12 +589,16 @@ nav {
     align-items: center;
   }
 
-  .fade-in{
+  .skills-section .skill{
+    position: relative;
+    left: 2rem;
+  }
+  .fade-in {
     opacity: 1;
     transition: none;
   }
 }
-#msg{
+#msg {
   color: #fed201;
   margin-top: 10px;
   display: block;
