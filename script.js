@@ -20,6 +20,13 @@ burger.addEventListener("click", () => {
 // Project Section Display
 const projects = [
   {
+    title: "Optimizing Water Management: IoT Crop Monitoring System",
+    description:
+      "This IoT-based project monitors soil moisture, pH levels, temperature, humidity, and rainfall. Based on the collected data, it automates the irrigation process.",
+    githubLink:
+      "https://github.com/Anirudhabg/Optimizing-Water-Management-IoT-Crop-Monitoring-System-.git",
+  },
+  {
     title: "Twitter Sentiments Analysis",
     description:
       "The Twitter Sentiment Analysis project performs sentiment analysis on Twitter data using advanced machine learning techniques. It features a Flask backend for serving the sentiment analysis model and a Chrome extension for analyzing sentiments directly from Twitter.",
@@ -29,15 +36,9 @@ const projects = [
     title: "Transit-Flow: A Comprehensive Cargo Solution",
     description:
       "Transit-Flow is a cutting-edge cargo management solution, offering a comprehensive approach to streamline the complexities of logistics. Developed as part of an internship project, its frontend is meticulously crafted to provide an intuitive and responsive user experience. Leveraging HTML, CSS, JavaScript, and Figma, Transit-Flow presents a dynamic interface tailored to meet the diverse needs of cargo handling, tracking, and optimization. Whether managing shipments across borders or orchestrating seamless supply chain operations, Transit-Flow stands as a beacon of efficiency in the realm of cargo management solutions.",
-    githubLink: "https://transitflow-anirudha.netlify.app/",
+    githubLink: "https://github.com/Anirudhabg/transitflowTWP.git",
   },
-  {
-    title: "Expenso: Your Personal Money Manager",
-    description:
-      "Expenso revolutionizes personal finance management with its user-friendly Android application. Designed with precision using Figma, Expenso offers a seamless experience for users seeking to effortlessly track, categorize, and analyze their expenses. Say goodbye to the hassle of manual record-keeping and welcome a new era of financial efficiency. With Expenso, you can take control of your finances anytime, anywhere, empowering you to make informed decisions and achieve your financial goals. Powered by Android technology, Expenso is your ultimate companion in navigating the complexities of personal finance with ease.",
-    githubLink:
-      "https://www.figma.com/file/zBUrzHttwsw02AKlRfqpUN/Expesno-UX%2FUI-Design?type=design&node-id=0%3A1&mode=design&t=0xqGnkwX3VGXgBbg-1",
-  },
+  
 
   // Add more projects here
 ];
